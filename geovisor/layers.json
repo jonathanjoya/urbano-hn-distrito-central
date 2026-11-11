@@ -80,21 +80,21 @@
     },
     {
       "id": "hn-mdc-huella-aparicion",
-      "title": "Ciudad construida y año estimado de aparición (2016–2026)",
+      "title": "Crecimiento de la mancha urbana (2019–2026)",
       "group": "Nivel 1: Datos globales",
-      "format": "xyz_or_cog",
-      "geometry_type": "raster",
-      "status": "en_preparacion",
-      "source_path": null,
-      "expected_file_hint": "geovisor/capas/mdc_huella_multitemporal.geojson o Tile URL",
-      "resolution": "10 m (Sentinel-2 / Dynamic World / Open Buildings 2.5D)",
+      "format": "geojson",
+      "geometry_type": "polygon",
+      "status": "en_revision",
+      "source_path": "geovisor/capas/mdc_crecimiento_urbano_2019_2026.geojson",
+      "expected_file_hint": "geovisor/capas/mdc_crecimiento_urbano_2019_2026.geojson",
+      "resolution": "30 m (Sentinel-2 Harmonized / NDVI < 0.2)",
       "style": {
-        "fill_color": "#007F8B",
-        "fill_opacity": 0.45,
-        "stroke_color": "#005a63",
-        "stroke_width": 1
+        "fill_color": "#E53935",
+        "fill_opacity": 0.65,
+        "stroke_color": "#B71C1C",
+        "stroke_width": 1.2
       },
-      "caveat": "Verificar cobertura temporal efectiva de Open Buildings 2.5D en el área."
+      "caveat": "Crecimiento de la mancha urbana detectado mediante Sentinel-2 (NDVI < 0.2) en Google Earth Engine (2019–2026)."
     },
     {
       "id": "hn-mdc-brecha-celdas-colonias",
